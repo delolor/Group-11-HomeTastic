@@ -21,8 +21,8 @@ Password: 1234
 
 ## Step-by-step Guide
 1) Open Netbeans
-2) Clone repository
-  --> Git > Clone > Copy HTTPS link from Git Repo --> Enter Git User & Password
+2) Clone repository<br/>
+  --> Git > Clone > Copy HTTPS link from Git Repo --> Enter Git User & Password <br/>
   --> Set Local Repositories to Desktop or Common Places
 3) Run MySQL, change password at source
 4) Right click Welcome.java & Run (Shift + F6)
