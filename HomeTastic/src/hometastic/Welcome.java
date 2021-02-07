@@ -32,7 +32,6 @@ public class Welcome extends javax.swing.JFrame {
         ButtonLogin = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        Logo = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -95,9 +94,6 @@ public class Welcome extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Montserrat Light", 0, 20)); // NOI18N
         jLabel1.setText("A place to find nearest homestay at your destination");
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, -1, -1));
-
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/QuickHome(Colored0.5).png"))); // NOI18N
-        jPanel2.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Montserrat Light", 0, 20)); // NOI18N
         jLabel3.setText("Welcome to");
@@ -166,7 +162,6 @@ public class Welcome extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonLogin;
     private javax.swing.JButton ButtonRegister;
-    private javax.swing.JLabel Logo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;

@@ -528,7 +528,7 @@ public class ViewProperty extends javax.swing.JFrame {
         
         try{
             dispose();
-//            new QuickHome_BookProperty(username, propid, homestayName.getText()).setVisible(true);
+            new BookProperty(username, propid, homestayName.getText()).setVisible(true);
             //System.out.println("Update successful");
         }
         catch(Exception e){
