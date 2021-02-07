@@ -12,12 +12,12 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author User
+ * @author user
  */
 public class Register extends javax.swing.JFrame {
 
     /**
-     * Creates new form Register
+     * Creates new form QuickHome_Welcome
      */
     public Register() {
         initComponents();
@@ -55,13 +55,14 @@ public class Register extends javax.swing.JFrame {
         passwordEntered = new javax.swing.JPasswordField();
         ButtonCancel = new javax.swing.JButton();
         ButtonRegister = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        Logo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(970, 550));
-        setPreferredSize(new java.awt.Dimension(970, 550));
-        setSize(new java.awt.Dimension(970, 550));
+        setTitle("QuickHome");
+        setAutoRequestFocus(false);
+        setSize(new java.awt.Dimension(960, 540));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 66, 127));
@@ -217,17 +218,20 @@ public class Register extends javax.swing.JFrame {
         });
         jPanel1.add(ButtonRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, 170, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 970, 350));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 970, 350));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel2.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Montserrat Medium", 0, 20)); // NOI18N
         jLabel2.setText("Registration Page");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, 40));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, 40));
 
-        jLabel11.setFont(new java.awt.Font("Montserrat Medium", 0, 20)); // NOI18N
-        jLabel11.setText("Registration Page");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, 40));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 210));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameActionPerformed
@@ -284,7 +288,8 @@ public class Register extends javax.swing.JFrame {
         jRadioButton1.setActionCommand("user");
         jRadioButton2.setActionCommand("host");
         String selection = buttonGroup1.getSelection().getActionCommand();
-
+        
+        
         String username = usernameEntered.getText();
         String password = passwordEntered.getText();
         String firstName = FirstName.getText();
@@ -294,10 +299,10 @@ public class Register extends javax.swing.JFrame {
         String stateEntered = state.getText();
         String email = emailEntered.getText();
         String phoneNumber = phoneNum.getText();
-
+        
         Connection conn = null;
         PreparedStatement statement = null;
-
+        
         try{
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hometastic","root","1234");
@@ -313,7 +318,7 @@ public class Register extends javax.swing.JFrame {
             statement.setString(8, cityEntered);
             statement.setString(9, stateEntered);
             int i = statement.executeUpdate();
-
+            
             if(i > 0){
                 JOptionPane.showMessageDialog(null, "Data is saved!");
             }
@@ -352,6 +357,21 @@ public class Register extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Register.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -366,11 +386,11 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JButton ButtonRegister;
     private javax.swing.JTextField FirstName;
     private javax.swing.JTextField LastName;
+    private javax.swing.JLabel Logo;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JTextField city;
     private javax.swing.JTextField emailEntered;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -380,6 +400,7 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JPasswordField passwordEntered;
