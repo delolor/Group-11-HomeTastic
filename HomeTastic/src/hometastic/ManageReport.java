@@ -133,7 +133,7 @@ public class ManageReport extends javax.swing.JFrame {
         jDoneButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("QuickHome");
+        setTitle("HomeTastic");
         setAutoRequestFocus(false);
         setSize(new java.awt.Dimension(960, 540));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
