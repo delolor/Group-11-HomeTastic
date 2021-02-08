@@ -231,7 +231,7 @@ public class Login extends javax.swing.JFrame {
                             username = jTextFieldEmail.getText();
                             HostMainPage e = new HostMainPage(username);
                             e.setVisible(true);
-                            e.show_report();
+                            //e.show_report();
                             
                             
                             System.out.println("Welcome"); 
