@@ -618,6 +618,9 @@ public class AddProperty extends javax.swing.JFrame {
             }
             st.close();
             con.close();
+            dispose();
+            HostMainPage e = new HostMainPage(username);
+            e.setVisible(true);
             System.out.println("Insert successful");
         }
         catch(Exception e){
@@ -630,7 +633,7 @@ public class AddProperty extends javax.swing.JFrame {
         // TODO add your handling code here:
         // Cancel Add Property Button
         dispose();
-        new HostMainPage().setVisible(true);
+        new HostMainPage(username).setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void field_maxPersonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_maxPersonActionPerformed
