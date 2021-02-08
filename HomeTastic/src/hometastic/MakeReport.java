@@ -49,11 +49,13 @@ public class MakeReport extends javax.swing.JFrame {
         HomeMenu3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         PageTitle = new javax.swing.JLabel();
         FullName = new javax.swing.JLabel();
         jLabelusername = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         Issues = new javax.swing.JLabel();
         Performance = new javax.swing.JRadioButton();
@@ -132,6 +134,9 @@ public class MakeReport extends javax.swing.JFrame {
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 230, -1));
         jPanel3.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo3a.png"))); // NOI18N
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 130, 120));
+
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 720));
 
         jPanel4.setBackground(new java.awt.Color(0, 66, 127));
@@ -154,9 +159,12 @@ public class MakeReport extends javax.swing.JFrame {
 
         jLabelusername.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabelusername.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelusername.setText("User's Full Name");
+        jLabelusername.setText("User's Username");
         jPanel4.add(jLabelusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
         jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/user2w.png"))); // NOI18N
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 830, 130));
 
@@ -454,6 +462,7 @@ public class MakeReport extends javax.swing.JFrame {
     private javax.swing.JRadioButton Technical;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
@@ -462,6 +471,7 @@ public class MakeReport extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelusername;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
