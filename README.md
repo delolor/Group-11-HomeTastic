@@ -1,28 +1,12 @@
 # Hometastic Application
-IDE: Netbeans 8.0 <br/>
-Database: MySQL <br/>
-JDK 8
-
-To compile the project file, you need to install netbeans and import the JAR files which is
-1) mySQL Connector
-2) R2XML.jar
-
-## MySQL Settings
-Username: root <br/>
-Password: 1234
-
-### Import Data
-1) Open MySQL Workbench
-2) Connect to root
-3) Click Adminitration --> Data Import/Restore
-4) Select Import from Self-Contained File
-5) Enter path for SQL file
-6) Start import and enjoy!
 
 ## Step-by-step Guide
-1) Open Netbeans
-2) Clone repository<br/>
-  --> Git > Clone > Copy HTTPS link from Git Repo --> Enter Git User & Password <br/>
-  --> Set Local Repositories to Desktop or Common Places
-3) Run MySQL, change password at source
-4) Right click Welcome.java & Run (Shift + F6)
+1) Download Python 2 from the link below:
+   https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi
+2) During installation, make sure to check that the system path is also ticked for installation.
+3) Open CMD at the directory of our project file.
+4) Compile with the following command 
+	 python Code.py
+5) The program will launch automatically.
+
+IF CMD does not recognize the command, re-launch the python installer and double check if the system path installation is ticked and restart your computer.
