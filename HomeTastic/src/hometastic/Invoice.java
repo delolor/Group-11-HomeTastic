@@ -66,6 +66,7 @@ public class Invoice extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         userName1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -145,25 +146,29 @@ public class Invoice extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 330, 240));
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 150, 330, 230));
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 940));
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo3a.png"))); // NOI18N
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 120, 120));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 830));
 
         jPanel2.setBackground(new java.awt.Color(0, 66, 127));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        userName1.setFont(new java.awt.Font("Montserrat Medium", 0, 16)); // NOI18N
+        userName1.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         userName1.setForeground(new java.awt.Color(255, 255, 255));
-        userName1.setText("User's Name");
-        jPanel2.add(userName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 8, -1, 34));
+        userName1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/user2w.png"))); // NOI18N
+        userName1.setText("User's Username");
+        jPanel2.add(userName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, 34));
 
-        jLabel3.setFont(new java.awt.Font("Montserrat SemiBold", 1, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Montserrat", 1, 28)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Invoice");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 85, 275, 80));
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 275, 80));
 
-        jLabel14.setFont(new java.awt.Font("Montserrat Medium", 0, 16)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Log Out");
         jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -173,33 +178,33 @@ public class Invoice extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, 30));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 1180, 190));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 900, 150));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        booking_id1.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        booking_id1.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         booking_id1.setText("#GCJWHCS19");
         jPanel3.add(booking_id1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 130, 31));
 
-        homestayName.setFont(new java.awt.Font("Montserrat SemiBold", 1, 36)); // NOI18N
+        homestayName.setFont(new java.awt.Font("Montserrat", 1, 28)); // NOI18N
         homestayName.setText("Homestay Kelantan Darul Naim");
-        jPanel3.add(homestayName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 650, 60));
+        jPanel3.add(homestayName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 650, 60));
 
-        jLabel7.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel7.setText("Thank you for your interest in using our application to find and book a homestay.  ");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 760, 30));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 760, 30));
 
-        jLabel8.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 18)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel8.setText("Check out the details of your payment below.");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, -1, 31));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, 31));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel5.setBackground(new java.awt.Color(0, 66, 127));
 
-        jLabel9.setFont(new java.awt.Font("Montserrat Medium", 0, 20)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Payment Details");
 
@@ -208,53 +213,53 @@ public class Invoice extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(281, 281, 281)
+                .addGap(259, 259, 259)
                 .addComponent(jLabel9)
-                .addContainerGap(283, Short.MAX_VALUE))
+                .addContainerGap(267, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(8, 8, 8)
-                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
-                .addGap(8, 8, 8))
+                .addContainerGap()
+                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
+                .addGap(10, 10, 10))
         );
 
-        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 2, -1, -1));
+        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 2, 660, 40));
 
-        jLabel10.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
-        jLabel10.setText("Booking ID             :");
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, -1, 27));
+        jLabel10.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
+        jLabel10.setText("Booking ID            :");
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, -1, 27));
 
-        booking_id.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        booking_id.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         booking_id.setText("GCJWHCS19");
-        jPanel4.add(booking_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, -1, 27));
+        jPanel4.add(booking_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, 27));
 
-        jLabel16.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel16.setText("Amount Paid         :     RM");
-        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, 27));
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 230, 27));
 
-        jLabel17.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel17.setText("Date Received       :");
-        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, 27));
+        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, 27));
 
-        total_price1.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        total_price1.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         total_price1.setText("Total Price             :     RM");
-        jPanel4.add(total_price1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, -1, 27));
+        jPanel4.add(total_price1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, -1, 27));
 
-        total_price.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        total_price.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         total_price.setText("10.00");
-        jPanel4.add(total_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, -1, 27));
+        jPanel4.add(total_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, -1, 27));
 
-        amountPaid.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        amountPaid.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         amountPaid.setText("90.00");
-        jPanel4.add(amountPaid, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, -1, 27));
+        jPanel4.add(amountPaid, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, 27));
 
-        jLabeldate.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        jLabeldate.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabeldate.setText("DD/MM/YYYY");
-        jPanel4.add(jLabeldate, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, -1, 27));
+        jPanel4.add(jLabeldate, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, -1, 27));
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 380, 740, 260));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 660, 230));
 
         savePDFButton.setBackground(new java.awt.Color(0, 66, 127));
         savePDFButton.setFont(new java.awt.Font("Montserrat Medium", 0, 16)); // NOI18N
@@ -265,7 +270,7 @@ public class Invoice extends javax.swing.JFrame {
                 savePDFButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(savePDFButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 667, 160, 50));
+        jPanel3.add(savePDFButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 610, 160, 50));
 
         exitButton.setBackground(new java.awt.Color(0, 66, 127));
         exitButton.setFont(new java.awt.Font("Montserrat Medium", 0, 16)); // NOI18N
@@ -276,30 +281,32 @@ public class Invoice extends javax.swing.JFrame {
                 exitButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 667, 170, 50));
+        jPanel3.add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 610, 170, 50));
 
-        jLabel11.setFont(new java.awt.Font("Montserrat ExtraLight", 0, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel11.setText("Hello ");
         jLabel11.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, 30));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 30));
 
-        jLabel12.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         jLabel12.setText("Booking ID: ");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 130, 31));
 
-        property_type.setFont(new java.awt.Font("Montserrat Medium", 0, 19)); // NOI18N
+        property_type.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
+        property_type.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Asset 10.png"))); // NOI18N
         property_type.setText("Bungalow");
-        jPanel3.add(property_type, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 130, -1, 40));
+        jPanel3.add(property_type, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, 40));
 
-        userName3.setFont(new java.awt.Font("Montserrat Medium", 0, 19)); // NOI18N
+        userName3.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
         userName3.setText("User's First Name, ");
-        jPanel3.add(userName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, 40));
+        jPanel3.add(userName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, 40));
 
-        location1.setFont(new java.awt.Font("Montserrat Medium", 0, 19)); // NOI18N
+        location1.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
+        location1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Asset 7.png"))); // NOI18N
         location1.setText("Bachok, Kelantan");
-        jPanel3.add(location1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 40));
+        jPanel3.add(location1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 40));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 1180, 740));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 900, 680));
 
         pack();
         setLocationRelativeTo(null);
@@ -424,6 +431,7 @@ public class Invoice extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
