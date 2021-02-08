@@ -136,10 +136,6 @@ public class ViewProperty extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         BackButton = new javax.swing.JButton();
         ReserveButton = new javax.swing.JButton();
-        jPanel11 = new javax.swing.JPanel();
-        Photo2 = new javax.swing.JLabel();
-        Photo3 = new javax.swing.JLabel();
-        Photo1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         description = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -157,9 +153,13 @@ public class ViewProperty extends javax.swing.JFrame {
         BackButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setSize(new java.awt.Dimension(1280, 900));
+        setPreferredSize(new java.awt.Dimension(1100, 650));
+        setResizable(false);
+        setSize(new java.awt.Dimension(1100, 650));
 
         jPanel1.setBackground(new java.awt.Color(0, 96, 166));
+        jPanel1.setMinimumSize(new java.awt.Dimension(240, 380));
+        jPanel1.setPreferredSize(new java.awt.Dimension(240, 380));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(0, 75, 146));
@@ -201,26 +201,31 @@ public class ViewProperty extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(0, 6, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 430, 230));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 240, 210));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 66, 127));
+        jPanel2.setMinimumSize(new java.awt.Dimension(700, 170));
+        jPanel2.setPreferredSize(new java.awt.Dimension(700, 170));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         propertyType.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
@@ -255,6 +260,8 @@ public class ViewProperty extends javax.swing.JFrame {
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel6.setMinimumSize(new java.awt.Dimension(600, 600));
+        jPanel6.setPreferredSize(new java.awt.Dimension(600, 600));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel9.setBackground(new java.awt.Color(255, 255, 255));
@@ -262,94 +269,110 @@ public class ViewProperty extends javax.swing.JFrame {
 
         jLabel19.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel19.setText("Parking");
-        jPanel9.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, 20));
+        jPanel9.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, -1, 20));
 
         jLabel20.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel20.setText("Backyard");
-        jPanel9.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 270, -1, -1));
+        jPanel9.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel21.setText("Swimming Pool");
-        jPanel9.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+        jPanel9.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel22.setText("Air Conditioner");
-        jPanel9.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
+        jPanel9.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel23.setText("Queen Beds");
-        jPanel9.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+        jPanel9.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
 
         jLabel25.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel25.setText("Wifi");
-        jPanel9.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, -1, -1));
+        jPanel9.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
 
         jLabel27.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel27.setText("Single Beds");
-        jPanel9.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, -1, -1));
+        jPanel9.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Montserrat Light", 1, 14)); // NOI18N
         jLabel24.setText("Max Person");
-        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, -1, -1));
+        jPanel9.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
         jPanel9.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 212, -1, -1));
 
         aircond.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         aircond.setText("Yes");
-        jPanel9.add(aircond, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 230, -1, -1));
+        jPanel9.add(aircond, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
 
         max_person.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         max_person.setText("Persons");
-        jPanel9.add(max_person, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, -1, -1));
+        jPanel9.add(max_person, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, -1, -1));
 
         single_bed1.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         single_bed1.setText("Single Bed(s)");
-        jPanel9.add(single_bed1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 125, -1, 20));
+        jPanel9.add(single_bed1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, 20));
 
         wifi.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         wifi.setText("Yes");
-        jPanel9.add(wifi, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 40, -1, -1));
+        jPanel9.add(wifi, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, -1, -1));
 
         single_bed.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         single_bed.setText("1");
-        jPanel9.add(single_bed, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, -1, 30));
+        jPanel9.add(single_bed, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, -1, 20));
 
         pool.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         pool.setText("Yes");
-        jPanel9.add(pool, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
+        jPanel9.add(pool, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         backyard.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         backyard.setText("Yes");
-        jPanel9.add(backyard, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, -1, 30));
+        jPanel9.add(backyard, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, -1, 30));
 
         max_person1.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         max_person1.setText("12");
-        jPanel9.add(max_person1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
+        jPanel9.add(max_person1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 20, -1));
 
         queen_bed.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         queen_bed.setText("5");
-        jPanel9.add(queen_bed, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
+        jPanel9.add(queen_bed, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 10, -1));
 
         queen_bed2.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         queen_bed2.setText("Queen Bed(s)");
-        jPanel9.add(queen_bed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
+        jPanel9.add(queen_bed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, -1));
 
         parking1.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         parking1.setText("Parking(s)");
-        jPanel9.add(parking1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 70, -1));
+        jPanel9.add(parking1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 70, -1));
 
         parking2.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         parking2.setText("2");
-        jPanel9.add(parking2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
-        jPanel9.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-        jPanel9.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
-        jPanel9.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
-        jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, -1));
-        jPanel9.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, -1, -1));
-        jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
-        jPanel9.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, -1, -1));
-        jPanel9.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, -1));
+        jPanel9.add(parking2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
 
-        jPanel6.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 260, 390, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/man.png"))); // NOI18N
+        jPanel9.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/queen1.png"))); // NOI18N
+        jPanel9.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/swimming1.png"))); // NOI18N
+        jPanel9.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/park.png"))); // NOI18N
+        jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/wifi.jpg"))); // NOI18N
+        jPanel9.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 30, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/bed.png"))); // NOI18N
+        jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 30, 20));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Aircon.png"))); // NOI18N
+        jPanel9.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, -1, 40));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/backyard1.png"))); // NOI18N
+        jPanel9.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 30, 30));
+
+        jPanel6.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, 350, 210));
 
         BackButton.setBackground(new java.awt.Color(0, 66, 127));
         BackButton.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
@@ -360,7 +383,7 @@ public class ViewProperty extends javax.swing.JFrame {
                 BackButtonActionPerformed(evt);
             }
         });
-        jPanel6.add(BackButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 650, 150, 40));
+        jPanel6.add(BackButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 150, 40));
 
         ReserveButton.setBackground(new java.awt.Color(0, 66, 127));
         ReserveButton.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
@@ -371,54 +394,34 @@ public class ViewProperty extends javax.swing.JFrame {
                 ReserveButtonActionPerformed(evt);
             }
         });
-        jPanel6.add(ReserveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 650, 140, 40));
+        jPanel6.add(ReserveButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 140, 40));
 
-        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Photo2.setBackground(new java.awt.Color(153, 153, 153));
-        Photo2.setText("Photo2");
-        Photo2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel11.add(Photo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 10, 335, 206));
-
-        Photo3.setBackground(new java.awt.Color(153, 153, 153));
-        Photo3.setText("Photo3");
-        Photo3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel11.add(Photo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, 335, 206));
-
-        Photo1.setBackground(new java.awt.Color(153, 153, 153));
-        Photo1.setText("Photo1");
-        Photo1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel11.add(Photo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 335, 206));
-
-        jPanel6.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 1170, 229));
-
-        jLabel2.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         jLabel2.setText("Description");
-        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, -1));
+        jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
 
-        description.setFont(new java.awt.Font("Montserrat Light", 0, 16)); // NOI18N
+        description.setFont(new java.awt.Font("Montserrat Light", 0, 12)); // NOI18N
         description.setText("Homestay Description");
-        jPanel6.add(description, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, 30));
+        jPanel6.add(description, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, -1, 20));
 
-        jLabel11.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         jLabel11.setText("Personal Rating & Review");
-        jPanel6.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 420, -1, 30));
+        jPanel6.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, 30));
 
-        overallRating.setFont(new java.awt.Font("Montserrat Light", 0, 16)); // NOI18N
+        overallRating.setFont(new java.awt.Font("Montserrat Light", 0, 12)); // NOI18N
         overallRating.setText("Star(s)");
-        jPanel6.add(overallRating, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, -1, 20));
+        jPanel6.add(overallRating, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, 20));
 
-        jLabel13.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         jLabel13.setText("Average Rating");
-        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, -1));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        userName2.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        userName2.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         userName2.setText("User2's Name");
 
-        comment2.setFont(new java.awt.Font("Montserrat Light", 0, 16)); // NOI18N
+        comment2.setFont(new java.awt.Font("Montserrat Light", 0, 12)); // NOI18N
         comment2.setText("User2's Comment");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -430,26 +433,25 @@ public class ViewProperty extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(userName2)
                     .addComponent(comment2))
-                .addContainerGap(450, Short.MAX_VALUE))
+                .addContainerGap(215, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(userName2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(comment2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
-        jPanel6.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 550, 610, 90));
+        jPanel6.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 330, 60));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        userName1.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        userName1.setFont(new java.awt.Font("Montserrat SemiBold", 0, 14)); // NOI18N
         userName1.setText("User1's Name");
 
-        comment1.setFont(new java.awt.Font("Montserrat Light", 0, 16)); // NOI18N
+        comment1.setFont(new java.awt.Font("Montserrat Light", 0, 12)); // NOI18N
         comment1.setText("User1's Comment");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -461,31 +463,30 @@ public class ViewProperty extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(userName1)
                     .addComponent(comment1))
-                .addContainerGap(450, Short.MAX_VALUE))
+                .addContainerGap(215, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(userName1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(comment1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
-        jPanel6.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 460, 610, 90));
+        jPanel6.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 330, 60));
 
-        price.setFont(new java.awt.Font("Montserrat SemiBold", 0, 36)); // NOI18N
+        price.setFont(new java.awt.Font("Montserrat SemiBold", 0, 24)); // NOI18N
         price.setText("RM");
-        jPanel6.add(price, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, -1, 60));
+        jPanel6.add(price, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 50, -1, 60));
 
-        jLabel12.setFont(new java.awt.Font("Montserrat SemiBold", 0, 36)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Montserrat SemiBold", 0, 24)); // NOI18N
         jLabel12.setText("RM");
-        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, -1, 60));
+        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 50, -1, 60));
 
-        overallRating1.setFont(new java.awt.Font("Montserrat Light", 0, 16)); // NOI18N
+        overallRating1.setFont(new java.awt.Font("Montserrat Light", 0, 12)); // NOI18N
         overallRating1.setText("5");
-        jPanel6.add(overallRating1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, -1, 20));
+        jPanel6.add(overallRating1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, 20));
 
         BackButton1.setBackground(new java.awt.Color(0, 66, 127));
         BackButton1.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
@@ -496,7 +497,7 @@ public class ViewProperty extends javax.swing.JFrame {
                 BackButton1ActionPerformed(evt);
             }
         });
-        jPanel6.add(BackButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 650, 110, 40));
+        jPanel6.add(BackButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 110, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -507,8 +508,8 @@ public class ViewProperty extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, 0)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 918, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -604,6 +605,14 @@ public class ViewProperty extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -617,9 +626,6 @@ public class ViewProperty extends javax.swing.JFrame {
     private javax.swing.JButton BackButton;
     private javax.swing.JButton BackButton1;
     private javax.swing.JLabel FullName;
-    private javax.swing.JLabel Photo1;
-    private javax.swing.JLabel Photo2;
-    private javax.swing.JLabel Photo3;
     private javax.swing.JButton ReserveButton;
     private javax.swing.JLabel aircond;
     private javax.swing.JLabel backyard;
@@ -653,7 +659,6 @@ public class ViewProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
