@@ -145,7 +145,7 @@ public class Login extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(Logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Montserrat Medium", 0, 20)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Montserrat", 1, 20)); // NOI18N
         jLabel2.setText("Login Page");
         jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, -1, 40));
 
