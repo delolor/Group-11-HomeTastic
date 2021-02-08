@@ -114,14 +114,9 @@ public class ManageReport extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel3 = new javax.swing.JPanel();
-        HomeMenu2 = new javax.swing.JPanel();
-        Menu = new javax.swing.JLabel();
-        ManageReportButton = new javax.swing.JButton();
-        HomeMenu1 = new javax.swing.JButton();
-        HomeMenu3 = new javax.swing.JButton();
-        HomeMenu4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        ManageReportButton = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         PageTitle = new javax.swing.JLabel();
         jLabeladmin = new javax.swing.JLabel();
@@ -140,15 +135,8 @@ public class ManageReport extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(0, 96, 166));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        HomeMenu2.setBackground(new java.awt.Color(0, 66, 127));
-        HomeMenu2.setMinimumSize(new java.awt.Dimension(233, 45));
-        HomeMenu2.setPreferredSize(new java.awt.Dimension(240, 55));
-        HomeMenu2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Menu.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
-        Menu.setForeground(new java.awt.Color(255, 255, 255));
-        HomeMenu2.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, -1, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
         ManageReportButton.setBackground(new java.awt.Color(0, 96, 166));
         ManageReportButton.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
@@ -159,45 +147,7 @@ public class ManageReport extends javax.swing.JFrame {
                 ManageReportButtonActionPerformed(evt);
             }
         });
-        HomeMenu2.add(ManageReportButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 120, 370, 60));
-
-        HomeMenu1.setBackground(new java.awt.Color(0, 96, 166));
-        HomeMenu1.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
-        HomeMenu1.setForeground(new java.awt.Color(255, 255, 255));
-        HomeMenu1.setText("Property Approval");
-        HomeMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        HomeMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HomeMenu1ActionPerformed(evt);
-            }
-        });
-        HomeMenu2.add(HomeMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 370, 60));
-
-        HomeMenu3.setBackground(new java.awt.Color(0, 96, 166));
-        HomeMenu3.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
-        HomeMenu3.setForeground(new java.awt.Color(255, 255, 255));
-        HomeMenu3.setText("Account Settings");
-        HomeMenu3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HomeMenu3ActionPerformed(evt);
-            }
-        });
-        HomeMenu2.add(HomeMenu3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 350, 60));
-
-        HomeMenu4.setBackground(new java.awt.Color(0, 96, 166));
-        HomeMenu4.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
-        HomeMenu4.setForeground(new java.awt.Color(255, 255, 255));
-        HomeMenu4.setText("Property Manager");
-        HomeMenu4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                HomeMenu4ActionPerformed(evt);
-            }
-        });
-        HomeMenu2.add(HomeMenu4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 60, 370, 60));
-
-        jPanel3.add(HomeMenu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 110, 360, 240));
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jPanel3.add(ManageReportButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 150, 370, 60));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 550));
 
@@ -274,22 +224,6 @@ public class ManageReport extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ManageReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManageReportButtonActionPerformed
-        
-    }//GEN-LAST:event_ManageReportButtonActionPerformed
-
-    private void HomeMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeMenu1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HomeMenu1ActionPerformed
-
-    private void HomeMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeMenu3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HomeMenu3ActionPerformed
-
-    private void HomeMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeMenu4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HomeMenu4ActionPerformed
-
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -315,6 +249,10 @@ public class ManageReport extends javax.swing.JFrame {
         dispose();
         new Welcome().setVisible(true);
     }//GEN-LAST:event_FullNameMouseClicked
+
+    private void ManageReportButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ManageReportButtonActionPerformed
+
+    }//GEN-LAST:event_ManageReportButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -365,12 +303,7 @@ public class ManageReport extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel FullName;
-    private javax.swing.JButton HomeMenu1;
-    private javax.swing.JPanel HomeMenu2;
-    private javax.swing.JButton HomeMenu3;
-    private javax.swing.JButton HomeMenu4;
     private javax.swing.JButton ManageReportButton;
-    private javax.swing.JLabel Menu;
     private javax.swing.JLabel PageTitle;
     private javax.swing.JTable TableReport;
     private javax.swing.ButtonGroup buttonGroup1;
