@@ -92,7 +92,7 @@ public class Welcome extends javax.swing.JFrame {
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Montserrat Light", 0, 20)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Montserrat", 0, 20)); // NOI18N
         jLabel3.setText("Welcome to");
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 60, -1, -1));
 
