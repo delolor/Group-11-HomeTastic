@@ -52,7 +52,6 @@ public class ModifyProperty extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel29 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
@@ -148,24 +147,16 @@ public class ModifyProperty extends javax.swing.JFrame {
                 .addGap(4, 4, 4))
         );
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/QuickHome White (0.2).png"))); // NOI18N
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel29)
-                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(jLabel29)
-                .addGap(26, 26, 26)
+                .addGap(55, 55, 55)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -271,22 +262,22 @@ public class ModifyProperty extends javax.swing.JFrame {
         jLabel27.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         jLabel27.setText("Single Beds");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/queen1.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("queen1.png")));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/bed.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("bed.png")));
 
         jLabel24.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         jLabel24.setText("Max Person");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/wifi.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("wifi.jpg")));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/Aircon.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("Aircon.png")));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/backyard.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("backyard.png")));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/man.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("man.png")));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/quickhome/park.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("park.png")));
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -758,7 +749,6 @@ public class ModifyProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
