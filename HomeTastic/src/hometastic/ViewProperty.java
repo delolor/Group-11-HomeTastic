@@ -97,6 +97,7 @@ public class ViewProperty extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         propertyType = new javax.swing.JLabel();
         homestayName = new javax.swing.JLabel();
@@ -156,6 +157,7 @@ public class ViewProperty extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1100, 650));
         setResizable(false);
         setSize(new java.awt.Dimension(1100, 650));
+        getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(0, 96, 166));
         jPanel1.setMinimumSize(new java.awt.Dimension(240, 380));
@@ -165,7 +167,7 @@ public class ViewProperty extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 75, 146));
 
         jButton2.setBackground(new java.awt.Color(0, 75, 146));
-        jButton2.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Home");
         jButton2.setBorder(null);
@@ -176,7 +178,7 @@ public class ViewProperty extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(0, 96, 166));
-        jButton3.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("My Bookings");
         jButton3.setBorder(null);
@@ -187,7 +189,7 @@ public class ViewProperty extends javax.swing.JFrame {
         });
 
         jButton4.setBackground(new java.awt.Color(0, 96, 166));
-        jButton4.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
+        jButton4.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("Account Settings");
         jButton4.setBorder(null);
@@ -201,52 +203,56 @@ public class ViewProperty extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(11, 11, 11)
                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 240, 210));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 300, 200));
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, -1, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo3a.png"))); // NOI18N
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, 120, 120));
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(1, 0, 300, 903);
 
         jPanel2.setBackground(new java.awt.Color(0, 66, 127));
         jPanel2.setMinimumSize(new java.awt.Dimension(700, 170));
         jPanel2.setPreferredSize(new java.awt.Dimension(700, 170));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        propertyType.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        propertyType.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         propertyType.setForeground(new java.awt.Color(255, 255, 255));
         propertyType.setText("Bungalow");
-        jPanel2.add(propertyType, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 170, 40));
+        jPanel2.add(propertyType, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 170, 40));
 
-        homestayName.setFont(new java.awt.Font("Montserrat SemiBold", 1, 36)); // NOI18N
+        homestayName.setFont(new java.awt.Font("Montserrat", 1, 28)); // NOI18N
         homestayName.setForeground(new java.awt.Color(255, 255, 255));
         homestayName.setText("Homestay Kelantan Darul Naim");
-        jPanel2.add(homestayName, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 73, 650, 50));
+        jPanel2.add(homestayName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 650, 50));
 
-        userName.setFont(new java.awt.Font("Montserrat SemiBold", 1, 14)); // NOI18N
+        userName.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         userName.setForeground(new java.awt.Color(255, 255, 255));
-        userName.setText("User's Name");
+        userName.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/user2w.png"))); // NOI18N
+        userName.setText("User's Username");
         jPanel2.add(userName, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        location1.setFont(new java.awt.Font("Montserrat SemiBold", 0, 18)); // NOI18N
+        location1.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         location1.setForeground(new java.awt.Color(255, 255, 255));
         location1.setText("Bachok");
-        jPanel2.add(location1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 450, 40));
+        jPanel2.add(location1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 110, 430, 40));
 
         FullName.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         FullName.setForeground(new java.awt.Color(255, 255, 255));
@@ -256,7 +262,10 @@ public class ViewProperty extends javax.swing.JFrame {
                 FullNameMouseClicked(evt);
             }
         });
-        jPanel2.add(FullName, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, -1, -1));
+        jPanel2.add(FullName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(297, 0, 860, 160);
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -499,26 +508,8 @@ public class ViewProperty extends javax.swing.JFrame {
         });
         jPanel6.add(BackButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 110, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 918, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 707, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+        getContentPane().add(jPanel6);
+        jPanel6.setBounds(289, 153, 870, 750);
 
         pack();
         setLocationRelativeTo(null);
@@ -642,6 +633,7 @@ public class ViewProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
