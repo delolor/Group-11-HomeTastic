@@ -58,6 +58,8 @@ public class Register extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         Logo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("HomeTastic");
@@ -218,7 +220,7 @@ public class Register extends javax.swing.JFrame {
         });
         jPanel1.add(ButtonRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, 170, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 970, 350));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 970, 340));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -226,7 +228,13 @@ public class Register extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Montserrat Medium", 0, 20)); // NOI18N
         jLabel2.setText("Registration Page");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, 40));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 160, -1, 40));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo Colored (0.9).png"))); // NOI18N
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo Colored (0.7).png"))); // NOI18N
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, -1, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 210));
 
@@ -390,7 +398,9 @@ public class Register extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JTextField city;
     private javax.swing.JTextField emailEntered;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
