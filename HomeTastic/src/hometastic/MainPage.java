@@ -377,6 +377,8 @@ public class MainPage extends javax.swing.JFrame {
 
     private void HomeMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeMenu4ActionPerformed
         // TODO add your handling code here:
+        dispose();
+        new ModifyBooking(username).setVisible(true);
     }//GEN-LAST:event_HomeMenu4ActionPerformed
 
     private void jViewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jViewButtonActionPerformed
