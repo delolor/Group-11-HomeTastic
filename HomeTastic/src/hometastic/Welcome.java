@@ -12,7 +12,7 @@ package hometastic;
 public class Welcome extends javax.swing.JFrame {
 
     /**
-     * Creates new form QuickHome_Welcome
+     * Creates new form Welcome
      */
     public Welcome() {
         initComponents();

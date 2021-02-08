@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form QuickHome_Welcome
+     * Creates new form Login
      */
     public Login() {
         initComponents();
