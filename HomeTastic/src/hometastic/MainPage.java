@@ -176,11 +176,11 @@ public class MainPage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         MakeReview = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         FullName1 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         CheckOutField = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
         SearchField1 = new javax.swing.JTextField();
         CheckInField = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -188,6 +188,7 @@ public class MainPage extends javax.swing.JFrame {
         ButtonSearch = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         FullName = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TableReport = new javax.swing.JTable();
         jViewButton = new javax.swing.JButton();
@@ -242,7 +243,7 @@ public class MainPage extends javax.swing.JFrame {
                 HomeMenu6ActionPerformed(evt);
             }
         });
-        HomeMenu2.add(HomeMenu6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 120, 380, 60));
+        HomeMenu2.add(HomeMenu6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 340, 60));
 
         jPanel3.add(HomeMenu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 340, 180));
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
@@ -257,17 +258,20 @@ public class MainPage extends javax.swing.JFrame {
                 MakeReviewActionPerformed(evt);
             }
         });
-        jPanel3.add(MakeReview, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 320, 370, 60));
+        jPanel3.add(MakeReview, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 340, 60));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo3a.png"))); // NOI18N
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 130, 120));
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 550));
 
         jPanel4.setBackground(new java.awt.Color(0, 66, 127));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        FullName1.setFont(new java.awt.Font("Montserrat SemiBold", 1, 14)); // NOI18N
+        FullName1.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         FullName1.setForeground(new java.awt.Color(255, 255, 255));
-        FullName1.setText("User's Full Name");
-        jPanel4.add(FullName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+        FullName1.setText("User's Username");
+        jPanel4.add(FullName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, -1, -1));
         jPanel4.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
         CheckOutField.addActionListener(new java.awt.event.ActionListener() {
@@ -276,10 +280,6 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
         jPanel4.add(CheckOutField, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 130, 250, 40));
-
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Click here");
-        jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, -1, -1));
 
         SearchField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -317,7 +317,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel5.setText("Check-out Date(YYYY-MM-DD)");
         jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 110, -1, -1));
 
-        FullName.setFont(new java.awt.Font("Montserrat SemiBold", 1, 14)); // NOI18N
+        FullName.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         FullName.setForeground(new java.awt.Color(255, 255, 255));
         FullName.setText("Log Out");
         FullName.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -326,6 +326,9 @@ public class MainPage extends javax.swing.JFrame {
             }
         });
         jPanel4.add(FullName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/user2w.png"))); // NOI18N
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 760, 180));
 
@@ -515,12 +518,13 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JTextField SearchField1;
     private javax.swing.JTable TableReport;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;

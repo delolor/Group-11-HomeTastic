@@ -105,7 +105,7 @@ public class MakeReport extends javax.swing.JFrame {
                 HomeMenuActionPerformed(evt);
             }
         });
-        HomeMenu2.add(HomeMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 350, 60));
+        HomeMenu2.add(HomeMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 340, 60));
 
         HomeMenu1.setBackground(new java.awt.Color(0, 96, 166));
         HomeMenu1.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
@@ -117,7 +117,7 @@ public class MakeReport extends javax.swing.JFrame {
                 HomeMenu1ActionPerformed(evt);
             }
         });
-        HomeMenu2.add(HomeMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 60));
+        HomeMenu2.add(HomeMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 340, 60));
 
         HomeMenu3.setBackground(new java.awt.Color(0, 96, 166));
         HomeMenu3.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
@@ -128,7 +128,7 @@ public class MakeReport extends javax.swing.JFrame {
                 HomeMenu3ActionPerformed(evt);
             }
         });
-        HomeMenu2.add(HomeMenu3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 350, 60));
+        HomeMenu2.add(HomeMenu3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 340, 60));
 
         jPanel3.add(HomeMenu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 140, 350, 180));
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 230, -1));
@@ -166,9 +166,11 @@ public class MakeReport extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/user2w.png"))); // NOI18N
         jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 830, 130));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 830, 140));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setMinimumSize(new java.awt.Dimension(690, 350));
+        jPanel5.setPreferredSize(new java.awt.Dimension(690, 350));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Issues.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
@@ -245,7 +247,7 @@ public class MakeReport extends javax.swing.JFrame {
 
         RateApps1.setFont(new java.awt.Font("Montserrat", 1, 18)); // NOI18N
         RateApps1.setText("Rate our apps!");
-        jPanel5.add(RateApps1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
+        jPanel5.add(RateApps1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(0, 66, 127));
 
