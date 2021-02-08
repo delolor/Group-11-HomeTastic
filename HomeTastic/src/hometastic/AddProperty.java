@@ -13,7 +13,7 @@ import java.sql.ResultSet;
 
 /**
  *
- * @author aalia
+ * @author adlin
  */
 public class AddProperty extends javax.swing.JFrame {
 
@@ -22,6 +22,13 @@ public class AddProperty extends javax.swing.JFrame {
      */
     public AddProperty() {
         initComponents();
+    }
+    
+    public String username;
+    public AddProperty(String username) {
+        initComponents();
+        this.username = username;
+        jLabelusername.setText(username);
     }
 
     /**
@@ -38,7 +45,7 @@ public class AddProperty extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabelusername = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -126,9 +133,9 @@ public class AddProperty extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 66, 127));
 
-        jLabel2.setFont(new java.awt.Font("Montserrat SemiBold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("User's full name");
+        jLabelusername.setFont(new java.awt.Font("Montserrat SemiBold", 1, 14)); // NOI18N
+        jLabelusername.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelusername.setText("User's full name");
 
         jButton3.setBackground(new java.awt.Color(0, 66, 127));
         jButton3.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
@@ -148,7 +155,7 @@ public class AddProperty extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(jLabelusername)
                         .addGap(18, 18, 18)
                         .addComponent(jButton3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -158,7 +165,7 @@ public class AddProperty extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(jLabelusername)
                     .addComponent(jButton3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -753,7 +760,6 @@ public class AddProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -764,6 +770,7 @@ public class AddProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelusername;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
