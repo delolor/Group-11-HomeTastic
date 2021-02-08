@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 public class MakeReport extends javax.swing.JFrame {
 
     /**
-     * Creates new form QuickHome_Welcome
+     * Creates new form MakeReport
      */
     public MakeReport() {
         initComponents();
@@ -76,7 +76,7 @@ public class MakeReport extends javax.swing.JFrame {
         SubmitButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("QuickHome");
+        setTitle("HomeTastic");
         setAutoRequestFocus(false);
         setSize(new java.awt.Dimension(960, 540));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -140,7 +140,7 @@ public class MakeReport extends javax.swing.JFrame {
         PageTitle.setFont(new java.awt.Font("Montserrat", 1, 28)); // NOI18N
         PageTitle.setForeground(new java.awt.Color(255, 255, 255));
         PageTitle.setText("Make Report");
-        jPanel4.add(PageTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 60, 190, -1));
+        jPanel4.add(PageTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 60, 250, -1));
 
         FullName.setFont(new java.awt.Font("Montserrat", 1, 14)); // NOI18N
         FullName.setForeground(new java.awt.Color(255, 255, 255));

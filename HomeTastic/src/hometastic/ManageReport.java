@@ -23,7 +23,7 @@ import net.proteanit.sql.DbUtils;
  */
 public class ManageReport extends javax.swing.JFrame {
     /**
-     * Creates new form Welcome
+     * Creates new form ManageReport
      */
     public String username;
     public ManageReport() {
