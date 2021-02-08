@@ -256,7 +256,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Montserrat Medium" size="20" style="0"/>
+              <Font name="Montserrat" size="20" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Login Page"/>
           </Properties>
