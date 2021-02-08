@@ -30,7 +30,7 @@ public class HostMainPage extends javax.swing.JFrame {
     
     public HostMainPage() {
         initComponents();
-        show_report();
+        //show_report();
     }
     
     public HostMainPage(String username) {
@@ -321,7 +321,7 @@ public class HostMainPage extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         dispose();
-        new AddProperty(username).setVisible(true);
+        new AddProperty(username, hostid).setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void FullName1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FullName1MouseClicked
