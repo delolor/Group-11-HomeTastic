@@ -22,6 +22,22 @@ public class ModifyProperty extends javax.swing.JFrame {
     public ModifyProperty() {
         initComponents();
     }
+    
+    String username;
+    String propname;
+    int propid;
+    public ModifyProperty(String username, int propid, String propname) {
+        initComponents();
+        this.username = username;
+        this.propid = propid;
+        this.propname = propname;
+        jLabelusername.setText(username);
+        field_homestayName.setText(propname);
+    }
+
+    public int getPropid(){
+        return propid;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -40,7 +56,7 @@ public class ModifyProperty extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
+        jLabelusername = new javax.swing.JLabel();
         jButton7 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
@@ -163,9 +179,9 @@ public class ModifyProperty extends javax.swing.JFrame {
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("My Property");
 
-        jLabel28.setFont(new java.awt.Font("Montserrat Light", 0, 11)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel28.setText("Host's Name");
+        jLabelusername.setFont(new java.awt.Font("Montserrat Light", 0, 11)); // NOI18N
+        jLabelusername.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelusername.setText("Host's Name");
 
         jButton7.setBackground(new java.awt.Color(0, 66, 127));
         jButton7.setFont(new java.awt.Font("Montserrat Light", 0, 11)); // NOI18N
@@ -179,7 +195,7 @@ public class ModifyProperty extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel28)
+                .addComponent(jLabelusername)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -195,7 +211,7 @@ public class ModifyProperty extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(9, 9, 9)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel28)
+                    .addComponent(jLabelusername)
                     .addComponent(jButton7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -741,7 +757,6 @@ public class ModifyProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -750,6 +765,7 @@ public class ModifyProperty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelusername;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
