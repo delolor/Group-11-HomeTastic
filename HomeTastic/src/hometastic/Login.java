@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form QuickHome_Welcome
+     * Creates new form Welcome
      */
     public Login() {
         initComponents();
@@ -50,7 +50,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("QuickHome");
+        setTitle("HomeTastic");
         setAutoRequestFocus(false);
         setSize(new java.awt.Dimension(960, 540));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -229,9 +229,9 @@ public class Login extends javax.swing.JFrame {
                     if(dbasePassword.equals(enteredPassword)){
                             dispose();
                             username = jTextFieldEmail.getText();
-//                            HostMainPage e = new HostMainPage(username);
-//                            e.setVisible(true);
-                            //e.show_report();
+                            HostMainPage e = new HostMainPage(username);
+                            e.setVisible(true);
+                            e.show_report();
                             
                             
                             System.out.println("Welcome"); 
@@ -261,7 +261,7 @@ public class Login extends javax.swing.JFrame {
                     if(dbasePassword.equals(enteredPassword)){
                             dispose();
                             username = jTextFieldEmail.getText();
-//                            new ManageReport(username).setVisible(true);
+                            new ManageReport(username).setVisible(true);
                             
                             System.out.println("Welcome"); 
                     }

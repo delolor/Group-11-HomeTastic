@@ -76,6 +76,7 @@ public class ModifyBooking extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("HomeTastic");
 
         jPanel1.setBackground(new java.awt.Color(0, 96, 166));
 

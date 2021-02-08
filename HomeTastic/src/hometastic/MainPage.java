@@ -24,7 +24,7 @@ import net.proteanit.sql.DbUtils;
  */
 public class MainPage extends javax.swing.JFrame {
     /**
-     * Creates new form QuickHome_Welcome
+     * Creates new form MainPage
      */
     String username;
     public MainPage() {
@@ -193,7 +193,7 @@ public class MainPage extends javax.swing.JFrame {
         jViewButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("QuickHome");
+        setTitle("HomeTastic");
         setAutoRequestFocus(false);
         setSize(new java.awt.Dimension(960, 540));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -391,17 +391,6 @@ public class MainPage extends javax.swing.JFrame {
         viewpage.setVisible(true);
         System.out.println(viewpage.getPropid());
         viewpage.getData();
-        /*String query = "UPDATE `quickhome`.`report` SET `REPORT_STATUS` = 'DONE' WHERE `REPORT_ID` = " + cell;
-        try{
-            Connection connection = getConnection();
-            PreparedStatement ps = connection.prepareStatement(query);
-            ps.execute();
-            JOptionPane.showMessageDialog(null, "Marked as Done!");
-            update_table();
-            
-        }catch(Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        }*/
     }//GEN-LAST:event_jViewButtonActionPerformed
 
     private void CheckOutFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckOutFieldActionPerformed

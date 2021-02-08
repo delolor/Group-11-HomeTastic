@@ -29,7 +29,6 @@ public class Invoice extends javax.swing.JFrame {
     double paid;
     String date;
     
-    //new QuickHome_Invoice(bookingid, username, homestayName, paid, date ).setVisible(true);  
     public Invoice(int bookingid, String username, String homestayname, double paid, String date) {
         initComponents();
         this.bookingid = bookingid;
@@ -96,6 +95,7 @@ public class Invoice extends javax.swing.JFrame {
         location1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("HomeTastic");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 96, 166));

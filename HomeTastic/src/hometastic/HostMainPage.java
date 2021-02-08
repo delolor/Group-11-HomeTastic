@@ -24,7 +24,7 @@ import net.proteanit.sql.DbUtils;
  */
 public class HostMainPage extends javax.swing.JFrame {
     /**
-     * Creates new form Welcome
+     * Creates new form HostMainPage
      */
     String username, hostid;
     

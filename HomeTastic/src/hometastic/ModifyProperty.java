@@ -102,6 +102,7 @@ public class ModifyProperty extends javax.swing.JFrame {
         jPanel14 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("HomeTastic");
         setSize(new java.awt.Dimension(1280, 900));
 
         jPanel1.setBackground(new java.awt.Color(0, 96, 166));
