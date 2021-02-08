@@ -555,13 +555,13 @@ public class ModifyProperty extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         dispose();
-        new HostMainPage().setVisible(true);
+        new HostMainPage(username).setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void cancelModifyPropertyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelModifyPropertyButtonActionPerformed
         // TODO add your handling code here:
         dispose();
-        new HostMainPage().setVisible(true);
+        new HostMainPage(username).setVisible(true);
     }//GEN-LAST:event_cancelModifyPropertyButtonActionPerformed
 
     private void field_homestayNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_field_homestayNameActionPerformed
