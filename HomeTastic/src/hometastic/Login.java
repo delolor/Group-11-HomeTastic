@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form Welcome
+     * Creates new form Login
      */
     public Login() {
         initComponents();
@@ -48,6 +48,8 @@ public class Login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         Logo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("HomeTastic");
@@ -145,7 +147,13 @@ public class Login extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Montserrat Medium", 0, 20)); // NOI18N
         jLabel2.setText("Login Page");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, 40));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, -1, 40));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo Colored (0.9).png"))); // NOI18N
+        jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo Colored (0.7).png"))); // NOI18N
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, -1));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 970, 230));
 
@@ -229,9 +237,9 @@ public class Login extends javax.swing.JFrame {
                     if(dbasePassword.equals(enteredPassword)){
                             dispose();
                             username = jTextFieldEmail.getText();
+                      
                             HostMainPage e = new HostMainPage(username);
                             e.setVisible(true);
-                            //e.show_report();
                             
                             
                             System.out.println("Welcome"); 
@@ -261,7 +269,7 @@ public class Login extends javax.swing.JFrame {
                     if(dbasePassword.equals(enteredPassword)){
                             dispose();
                             username = jTextFieldEmail.getText();
-                            new ManageReport(username).setVisible(true);
+//                            new ManageReport(username).setVisible(true);
                             
                             System.out.println("Welcome"); 
                     }
@@ -360,6 +368,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordEntered;
