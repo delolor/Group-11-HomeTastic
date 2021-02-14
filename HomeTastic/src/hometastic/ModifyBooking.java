@@ -130,10 +130,12 @@ public class ModifyBooking extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         MakeReview = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         FullName1 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         FullName = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         TableReport = new javax.swing.JTable();
         jViewButton = new javax.swing.JButton();
@@ -205,6 +207,9 @@ public class ModifyBooking extends javax.swing.JFrame {
         });
         jPanel3.add(MakeReview, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 320, 370, 60));
 
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo3a.png"))); // NOI18N
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 120, 120));
+
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 340, 550));
 
         jPanel4.setBackground(new java.awt.Color(0, 66, 127));
@@ -225,6 +230,11 @@ public class ModifyBooking extends javax.swing.JFrame {
             }
         });
         jPanel4.add(FullName, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Montserrat", 1, 28)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("My Booking");
+        jPanel4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 275, 80));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 0, 760, 140));
 
@@ -374,7 +384,9 @@ public class ModifyBooking extends javax.swing.JFrame {
     private javax.swing.JLabel Menu;
     private javax.swing.JTable TableReport;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
