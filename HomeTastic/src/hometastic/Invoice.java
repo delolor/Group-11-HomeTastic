@@ -120,11 +120,21 @@ public class Invoice extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("My Bookings");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(0, 66, 127));
         jButton3.setFont(new java.awt.Font("Montserrat Medium", 0, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Account Settings");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -152,7 +162,7 @@ public class Invoice extends javax.swing.JFrame {
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Logo3a.png"))); // NOI18N
         jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 120, 120));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 830));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 690));
 
         jPanel2.setBackground(new java.awt.Color(0, 66, 127));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -193,11 +203,11 @@ public class Invoice extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel7.setText("Thank you for your interest in using our application to find and book a homestay.  ");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 760, 30));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 760, 30));
 
         jLabel8.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel8.setText("Check out the details of your payment below.");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, -1, 31));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, 31));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -213,53 +223,53 @@ public class Invoice extends javax.swing.JFrame {
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(259, 259, 259)
+                .addGap(106, 106, 106)
                 .addComponent(jLabel9)
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addContainerGap(431, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE)
-                .addGap(10, 10, 10))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 2, 660, 40));
 
         jLabel10.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel10.setText("Booking ID            :");
-        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, -1, 27));
+        jPanel4.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, 27));
 
         booking_id.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         booking_id.setText("GCJWHCS19");
-        jPanel4.add(booking_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, -1, 27));
+        jPanel4.add(booking_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 180, -1, 27));
 
         jLabel16.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel16.setText("Amount Paid         :     RM");
-        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 230, 27));
+        jPanel4.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 230, 27));
 
         jLabel17.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel17.setText("Date Received       :");
-        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, 27));
+        jPanel4.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, 27));
 
         total_price1.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         total_price1.setText("Total Price             :     RM");
-        jPanel4.add(total_price1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, -1, 27));
+        jPanel4.add(total_price1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, 27));
 
         total_price.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         total_price.setText("10.00");
-        jPanel4.add(total_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, -1, 27));
+        jPanel4.add(total_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, -1, 27));
 
         amountPaid.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         amountPaid.setText("90.00");
-        jPanel4.add(amountPaid, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, 27));
+        jPanel4.add(amountPaid, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, 27));
 
         jLabeldate.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabeldate.setText("DD/MM/YYYY");
-        jPanel4.add(jLabeldate, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, -1, 27));
+        jPanel4.add(jLabeldate, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, -1, 27));
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 660, 230));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 420, 230));
 
         savePDFButton.setBackground(new java.awt.Color(0, 66, 127));
         savePDFButton.setFont(new java.awt.Font("Montserrat Medium", 0, 16)); // NOI18N
@@ -270,7 +280,7 @@ public class Invoice extends javax.swing.JFrame {
                 savePDFButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(savePDFButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 610, 160, 50));
+        jPanel3.add(savePDFButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 170, 50));
 
         exitButton.setBackground(new java.awt.Color(0, 66, 127));
         exitButton.setFont(new java.awt.Font("Montserrat Medium", 0, 16)); // NOI18N
@@ -281,12 +291,12 @@ public class Invoice extends javax.swing.JFrame {
                 exitButtonActionPerformed(evt);
             }
         });
-        jPanel3.add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 610, 170, 50));
+        jPanel3.add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 170, 50));
 
         jLabel11.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         jLabel11.setText("Hello ");
         jLabel11.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 30));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, -1, 30));
 
         jLabel12.setFont(new java.awt.Font("Montserrat", 0, 14)); // NOI18N
         jLabel12.setText("Booking ID: ");
@@ -299,14 +309,14 @@ public class Invoice extends javax.swing.JFrame {
 
         userName3.setFont(new java.awt.Font("Montserrat", 1, 16)); // NOI18N
         userName3.setText("User's First Name, ");
-        jPanel3.add(userName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, -1, 40));
+        jPanel3.add(userName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, -1, 40));
 
         location1.setFont(new java.awt.Font("Montserrat", 0, 16)); // NOI18N
         location1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/Asset 7.png"))); // NOI18N
         location1.setText("Bachok, Kelantan");
         jPanel3.add(location1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 40));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 900, 680));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, 900, 540));
 
         pack();
         setLocationRelativeTo(null);
@@ -374,6 +384,16 @@ public class Invoice extends javax.swing.JFrame {
         dispose();
         new Welcome().setVisible(true);
     }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        new ModifyBooking(username).setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments

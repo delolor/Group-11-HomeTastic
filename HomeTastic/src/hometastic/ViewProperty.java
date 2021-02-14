@@ -347,7 +347,7 @@ public class ViewProperty extends javax.swing.JFrame {
 
         queen_bed2.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         queen_bed2.setText("Queen Bed(s)");
-        jPanel9.add(queen_bed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 80, -1, -1));
+        jPanel9.add(queen_bed2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, -1, -1));
 
         parking1.setFont(new java.awt.Font("Montserrat Light", 0, 14)); // NOI18N
         parking1.setText("Parking(s)");
@@ -381,7 +381,7 @@ public class ViewProperty extends javax.swing.JFrame {
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hometastic/backyard1.png"))); // NOI18N
         jPanel9.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 30, 30));
 
-        jPanel6.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, 350, 210));
+        jPanel6.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 370, 210));
 
         BackButton.setBackground(new java.awt.Color(0, 66, 127));
         BackButton.setFont(new java.awt.Font("Montserrat Medium", 0, 14)); // NOI18N
@@ -543,7 +543,7 @@ public class ViewProperty extends javax.swing.JFrame {
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
         // TODO add your handling code here:
         dispose();
-//        new MakeReview(username, homestayName.getText()).setVisible(true);
+        new MakeReview(username, propid, homestayName.getText()).setVisible(true);
     }//GEN-LAST:event_BackButtonActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed

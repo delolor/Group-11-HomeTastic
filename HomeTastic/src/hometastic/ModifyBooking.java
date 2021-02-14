@@ -266,6 +266,8 @@ public class ModifyBooking extends javax.swing.JFrame {
 
     private void HomeMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeMenu1ActionPerformed
         // TODO add your handling code here:
+        dispose();
+        new MainPage(username).setVisible(true);
     }//GEN-LAST:event_HomeMenu1ActionPerformed
 
     private void MakeReviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MakeReviewActionPerformed

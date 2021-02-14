@@ -26,11 +26,13 @@ public class MakeReview extends javax.swing.JFrame {
     }
     
     String username, homename;
-    public MakeReview(String username, String homename){
+    int propid;
+    public MakeReview(String username, int propid, String homename){
         initComponents();
         this.username = username;
         jLabelusername.setText(username);
         homestayName.setText(homename);
+        this.propid = propid;
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -300,12 +302,14 @@ public class MakeReview extends javax.swing.JFrame {
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hometastic", "root", "1234");
             statement = conn.prepareStatement("insert into review values(null,?,?,?,?)");
             statement.setString(1, comment);
-            statement.setString(2, null);
-            statement.setString(3, null);
+            statement.setString(2, username);
+            statement.setInt(3, propid);
             statement.setString(4, selection);
             int i = statement.executeUpdate();
             if(i > 0) {
                 JOptionPane.showMessageDialog(null, "Review is successfully sent!");
+                dispose();
+                new MainPage(username).setVisible(true);
             }
             else {
                 JOptionPane.showMessageDialog(null, "Review is failed to send");
